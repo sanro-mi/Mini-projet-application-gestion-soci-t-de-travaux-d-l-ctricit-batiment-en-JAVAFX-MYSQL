@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricien_b.AccueilController">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="557.0" layoutX="101.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/photo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="665.0" layoutY="11.0" prefHeight="551.0" prefWidth="628.0">
+         <children>
+            <Label layoutX="50.0" layoutY="39.0" prefHeight="28.0" prefWidth="362.0" text="ELECTRICITÉ BÂTIMENT  :" textFill="#1e08e4">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="100.0" prefHeight="28.0" prefWidth="362.0" text="La société  STEB propose :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="159.0" prefHeight="28.0" prefWidth="455.0" text="-La conception des installations électriques">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="218.0" prefHeight="28.0" prefWidth="455.0" text="-Le diagnostic des installations électriques">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="325.0" prefHeight="28.0" prefWidth="455.0" text="-L’installation des réseaux électriques">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="271.0" prefHeight="28.0" prefWidth="568.0" text="-Le contrôle et maintenance des installations électriques">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="378.0" prefHeight="28.0" prefWidth="455.0" text="-La pose de tableau électrique">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="427.0" prefHeight="28.0" prefWidth="455.0" text="-La pose des appareillages électriques ">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

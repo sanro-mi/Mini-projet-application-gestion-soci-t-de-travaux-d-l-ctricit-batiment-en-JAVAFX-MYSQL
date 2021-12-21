@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricien_b.HomeController">
+    <content>
+        <AnchorPane prefHeight="1479.0" prefWidth="1356.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="204.0" layoutY="53.0" onMouseClicked="#hom" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/gen.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="255.0" layoutY="30.0" prefHeight="115.0" prefWidth="928.0" text="SOCIÉTÉ DE TRAVAUX D'ÉLÉCTRICITÉ BATIMENT" textAlignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="img1" fitHeight="209.0" fitWidth="289.0" layoutY="295.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/e.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="img2" fitHeight="211.0" fitWidth="242.0" layoutX="286.0" layoutY="294.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/e1.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="img3" fitHeight="213.0" fitWidth="221.0" layoutX="528.0" layoutY="293.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/e3.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="img4" fitHeight="216.0" fitWidth="301.0" layoutX="749.0" layoutY="291.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/e4.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="img5" fitHeight="215.0" fitWidth="306.0" layoutX="1050.0" layoutY="292.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/e5.jpg" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="-7.0" layoutY="1080.0" prefHeight="399.0" prefWidth="1358.0" style="-fx-background-color: #141313;">
+                    <children>
+                        <Label layoutX="84.0" layoutY="43.0" text="STEB" textFill="#0836da">
+                            <font>
+                                <Font name="Times New Roman Bold" size="36.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="229.0" fitWidth="474.0" layoutX="84.0" layoutY="85.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../img/t.PNG" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="668.0" layoutY="43.0" text=" Coordonnées" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="999.0" layoutY="43.0" text="Adresse" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="679.0" layoutY="156.0" text="GSM : +216 98 205 680" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="679.0" layoutY="108.0" text="Tél : +216 31 404 029" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="679.0" layoutY="258.0" prefHeight="28.0" prefWidth="253.0" text="Mail: STEBI@orange.tn" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="679.0" layoutY="210.0" text="Fax : +216 32 404 029" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Text fill="WHITE" layoutX="987.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avenue Hédi nouira , Immeuble arrigui Bloc B 2ème étage 7050 Menzel Bourguiba" wrappingWidth="320.13671875">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <JFXButton layoutX="1175.0" layoutY="183.0" onAction="#Paramètres" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #093eff;" text="Paramètres" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                    </font>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#d98e16" offset="0.3505154639175258" />
+                                <Stop color="#5a30c6" offset="0.4261168384879725" />
+                                <Stop color="#5b31c4" offset="0.49828178694158076" />
+                                <Stop color="#d99016" offset="0.5601374570446735" />
+                                <Stop color="#d916cb" offset="0.6872852233676976" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <JFXButton layoutX="707.0" layoutY="183.0" onAction="#employé" prefHeight="44.0" prefWidth="154.0" style="-fx-background-color: #093eff;" text=" employé" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                    </font>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#24e0a1" offset="0.26804123711340205" />
+                                <Stop color="#23de67" offset="0.37800687285223367" />
+                                <Stop color="#16d981" offset="0.4261168384879725" />
+                                <Stop color="#e32424" offset="0.4879725085910651" />
+                                <Stop color="#e02424" offset="0.5601374570446735" />
+                                <Stop color="#23de65" offset="0.6494845360824741" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <JFXButton layoutX="871.0" layoutY="183.0" onAction="#projet" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #093eff;" text="Projet" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                    </font>
+                    <ripplerFill>
+                        <LinearGradient endX="1.0" endY="0.8904761904761905" startX="1.0">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#5a30c6" offset="0.4261168384879725" />
+                                <Stop color="#5b31c4" offset="0.49828178694158076" />
+                                <Stop color="#5b31c4" offset="0.5601374570446735" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <JFXButton layoutX="1012.0" layoutY="183.0" onAction="#entrepreneur" prefHeight="44.0" prefWidth="154.0" style="-fx-background-color: #093eff;" text="entrepreneur" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="18.0" />
+                    </font>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5111111111111111" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#5a30c6" offset="0.4261168384879725" />
+                                <Stop color="#5b31c4" offset="0.49828178694158076" />
+                                <Stop color="#5b31c4" offset="0.5601374570446735" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+            <JFXButton fx:id="acc" layoutX="536.0" layoutY="183.0" onAction="#accueil" prefHeight="44.0" prefWidth="154.0" style="-fx-background-color: #093eff;" text="Accueil" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5111111111111111" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#24e0a1" offset="0.26804123711340205" />
+                        <Stop color="#23de67" offset="0.37800687285223367" />
+                        <Stop color="#16d981" offset="0.4261168384879725" />
+                        <Stop color="#e32424" offset="0.4879725085910651" />
+                        <Stop color="#e02424" offset="0.5601374570446735" />
+                        <Stop color="#23de65" offset="0.6494845360824741" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ScrollPane fx:id="scroll" layoutX="-3.0" layoutY="506.0" prefHeight="575.0" prefWidth="1358.0">
+              <content>
+                <AnchorPane fx:id="pane_home" minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="1358.0" />
+              </content>
+            </ScrollPane>
+      
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>

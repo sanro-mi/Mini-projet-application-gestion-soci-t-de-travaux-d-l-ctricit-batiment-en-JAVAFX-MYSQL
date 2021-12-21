@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="imag" prefHeight="639.0" prefWidth="1358.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricien_b.ProjetController">
+   <children>
+      <TableView fx:id="tabV" layoutX="22.0" layoutY="81.0" onMouseClicked="#table" onMouseDragged="#z" opacity="0.94" prefHeight="284.0" prefWidth="866.0" stylesheets="@../bdd/homeAdmin.css">
+         <columns>
+            <TableColumn fx:id="id_t" prefWidth="48.000030517578125" text="ID" />
+            <TableColumn fx:id="name_t" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="adresse_t" minWidth="0.0" prefWidth="152.0" text="adresse" />
+            <TableColumn fx:id="entreprenete_t" prefWidth="171.0" text="entrepreneur" />
+            <TableColumn fx:id="cout_t" minWidth="0.0" prefWidth="155.0" text="cout" />
+            <TableColumn fx:id="photo_t" minWidth="0.0" prefWidth="161.0" text="photo" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="name" focusColor="#3196af" labelFloat="true" layoutX="907.0" layoutY="151.0" prefHeight="25.0" prefWidth="178.0" promptText="Name" style="-fx-font-size: 18px;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="adresse" focusColor="#3196af" labelFloat="true" layoutX="907.0" layoutY="215.0" prefHeight="25.0" prefWidth="178.0" promptText="adresse" style="-fx-font-size: 18px;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="id" focusColor="#3196af" labelFloat="true" layoutX="907.0" layoutY="89.0" prefHeight="29.0" prefWidth="53.0" promptText="ID" style="-fx-font-size: 18px;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="cout" focusColor="#3196af" labelFloat="true" layoutX="907.0" layoutY="365.0" prefHeight="25.0" prefWidth="178.0" promptText="cout" style="-fx-font-size: 18px;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="im" fitHeight="168.0" fitWidth="178.0" layoutX="1140.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/file_image_1.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="source_ing" focusColor="#3196af" labelFloat="true" layoutX="1154.0" layoutY="314.0" prefHeight="25.0" prefWidth="178.0" promptText="Name" style="-fx-font-size: 18px;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="img" buttonType="RAISED" layoutX="1177.0" layoutY="372.0" onAction="#bu_imag" prefHeight="39.0" prefWidth="131.0" style="-fx-background-color: #3196AF;" text="Choose Img" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#b9b0b0" layoutX="511.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des projets">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_LEFT" layoutX="144.0" layoutY="409.0" prefHeight="69.0" prefWidth="247.0" styleClass="border">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="logout1111" onMouseClicked="#nouveau" prefHeight="39.0" prefWidth="144.0" ripplerFill="#ff00e5" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-background-radius: 100;" text="Nouveau">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#485460" glyphName="CIRCLE_ALT_NOTCH" size="2.2em" wrappingWidth="42.39999961853027" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="144.0" layoutY="501.0" prefHeight="69.0" prefWidth="247.0" styleClass="border">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="logout11111" onMouseClicked="#supprimer" prefHeight="39.0" prefWidth="144.0" ripplerFill="#ff2b00" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Supprimer">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#485460" glyphName="CIRCLE_ALT_NOTCH" size="2.2em" text="" wrappingWidth="42.39999961853027" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="455.0" layoutY="409.0" prefHeight="69.0" prefWidth="247.0" styleClass="border">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="logout11112" onMouseClicked="#Imprimer" prefHeight="39.0" prefWidth="153.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Imprimer">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#485460" glyphName="CIRCLE_ALT_NOTCH" size="2.2em" wrappingWidth="42.39999961853027" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="455.0" layoutY="501.0" prefHeight="69.0" prefWidth="247.0" styleClass="border">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="logout11113" onMouseClicked="#modifier" prefHeight="39.0" prefWidth="156.0" ripplerFill="#14d043" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="Modifier">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#485460" glyphName="CIRCLE_ALT_NOTCH" size="2.2em" wrappingWidth="42.39999961853027" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXComboBox fx:id="Combo" focusColor="#3196af" labelFloat="true" layoutX="907.0" layoutY="281.0" prefHeight="39.0" prefWidth="203.0" promptText="Category" style="-fx-font-size: 18px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Pane layoutX="828.0" layoutY="426.0" prefHeight="168.0" prefWidth="269.0" style="-fx-background-color: #ffffff; -fx-background-radius: 65 0 65 0; -fx-border-color: #000000; -fx-border-radius: 65 0 65 0;" stylesheets="@../../../../../Desktop/z/pfeProject/src/styleCss/homeAdmin.css">
+         <children>
+            <Text layoutX="37.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total  " textAlignment="CENTER" wrappingWidth="195.0">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <Label fx:id="total" alignment="CENTER" layoutX="-4.0" layoutY="49.0" prefHeight="47.0" prefWidth="276.0" text="14524752 DA">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane" prefHeight="639.0" prefWidth="1358.0" visible="false">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="606.0" prefWidth="1358.0">
+               <content>
+                  <AnchorPane fx:id="pane_home" minHeight="0.0" minWidth="0.0" prefHeight="607.0" prefWidth="1358.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
